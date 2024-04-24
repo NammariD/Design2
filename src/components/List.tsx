@@ -16,7 +16,7 @@ export default function NavBarList() {
         backgroundColor: "#121212",
         padding: 0,
         margin: -1,
-        height: 703,
+        height: "100vh"
       }}
     >
       <List
