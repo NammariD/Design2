@@ -12,16 +12,18 @@ import NavbarCard from "./components/NavbarCard";
 import NavBarList from "./components/List";
 import Box from "@mui/joy/Box";
 import FeedBackButton from "./components/FeedBackButton";
-import NewBoard from "./components/NewBoard";
 
 export default function BoardXHome() {
   return (
-    <Box sx = {{height:"100px", backgroundColor:"blue", margin:0,}}>
+    <Box>
       <NavbarCard />
       <NavBarList />
+      <div style = {{position: "absolute", justifyContent:"center", top:250, left:700}}>
+        <img src="portrait.png" alt="Portrait" />
+        <Typography sx = {{color:"white", justifyContent:"center"}}>When you star boards, they’ll show up here for easy access.</Typography>
+      </div>
+
       <FeedBackButton />
-      <Typography variant="plain" level = "h2" sx = {{position:"absolute", top:100, left:450, color:"white"}}>All Boards</Typography>
-      < NewBoard />
     </Box>
   );
 }
